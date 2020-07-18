@@ -224,7 +224,7 @@ DEPENDENCIES
   rails (~> 5.2.4, >= 5.2.4.3)
   sass-rails (~> 5.0)
   selenium-webdriver
-  splitclient-rb
+  splitclient-rb (~> 7.1.2)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
