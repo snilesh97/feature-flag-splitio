@@ -1,2 +1,4 @@
+# This is for localhost mode
+
 - enable_blue_background_color:
     treatment: 'on'
