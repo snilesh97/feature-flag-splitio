@@ -35,3 +35,12 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
+
+before_fork do
+  # keep your existing before_fork code if any
+  Rails.configuration.split_factory.stop!
+end
+on_worker_boot do
+  # keep your existing on_worker_boot code if any
+  Rails.configuration.split_factory.resume!
+end
